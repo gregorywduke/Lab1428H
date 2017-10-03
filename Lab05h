@@ -1,0 +1,22 @@
+#include <iostream>  // Gregory Duke (g_d100)
+#include <cmath>
+using namespace std;
+
+int main()
+{
+    int meal, perct, tip;
+
+    cout << "Insert the price of your meal: ";
+    cin >> meal;
+    cout << "Insert the percentage tip you want to leave: ";
+    cin >> perct;
+
+    if ( perct <= 0 || meal <= 0 ){
+        cout << "Wtf are you doing??" << endl;
+    }
+
+    tip = meal*(perct/10);
+    cout << "Your tip should be " << tip << "! Pay up." << endl;
+
+    return(0);
+}
